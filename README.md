@@ -1,6 +1,7 @@
 # Social links Website
 
-## Preview: shlimazl.social
+## Preview: https://shlimazl.social
 
-![Image] (https://prnt.sc/UNOwZoZAbQpP)
+![Site böyle gözüküyor](https://i.imgur.com/tzFAVLf.png)
+
 
