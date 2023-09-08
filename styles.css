@@ -1,53 +1,66 @@
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #787878;
-    background: radial-gradient(at center, #787878, #010101);
-    overflow: hidden;
-  }
+/* Temel stil ayarları */
+body {
+  margin: 0;
+  padding: 0;
+  background: hsl(257, 4%, 32%);
+  background: radial-gradient(circle, rgb(152, 204, 246) 0%, hsla(207, 23%, 41%, 1) 100%);
+  background: -moz-radial-gradient(circle, rgb(152, 193, 246) 0%, hsla(207, 23%, 41%, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgb(152, 185, 246) 0%, hsla(207, 23%, 41%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B597F6", endColorstr="#506A7F", GradientType=1 );
+  font-family: 'TRT', sans-serif; /* Yeniden tanımlanan font ailesi */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  .blink-text {
-    font-size: 24px;
-    font-family: TRT, sans-serif;
-    color: white;
-    animation: blink 2s infinite;
-    text-align: center;
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  overflow: hidden;
+}
 
-  @keyframes blink {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-
+/* Sosyal medya ikon stilleri */
 .social-icons {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
- 
+
 .social-icon {
   width: 35px; 
   height: 35px;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
- 
+
 .social-icon:hover {
   transform: scale(1.2);
   filter: brightness(1.3); 
 }
 
-  .doggo {
-    display: block;
-    margin: 0 auto; 
-    width: 300px;
-    height: 300px;
+.blink-text {
+  font-size: 32px;
+  font-family: "TRT", sans-serif;
+  animation: blink 2s infinite;
+  color:white
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+/* Köpek resmi stil ayarları */
+.doggo {
+  display: block;
+  margin: 0 auto; 
+  width: 300px;
+  height: 350px;
+}
