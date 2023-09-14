@@ -56,6 +56,25 @@ body {
   }
 }
 
+.blink-text2 {
+  font-size: 32px;
+  font-family: "TRT", sans-serif;
+  animation: blink 2s infinite;
+  color:white
+  margin-left: auto
+  margin-right: auto
+  width: 50em;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 
 /* Köpek resmi stil ayarları */
 .doggo {
