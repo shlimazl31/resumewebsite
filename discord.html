@@ -11,18 +11,35 @@
  
     </head>
  
-   <center><div id="countdown">5 saniye içinde Discord kanalına yönlendirileceksiniz.</div></center>
+  <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #countdown-text {
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="countdown-text">5 Saniye sonra Discord kanalına yönlendirileceksiniz.</div>
     
     <script>
-        var countdownDisplay = document.getElementById("countdown");
         var countdown = 5;
 
         function startCountdown() {
-            countdownDisplay.textContent = countdown;
+            var countdownText = document.getElementById("countdown-text");
+            countdownText.textContent = countdown + " Saniye sonra Discord kanalına yönlendirileceksiniz.";
+
             countdown--;
 
             if (countdown < 0) {
-                window.location.href = "https://discord.gg/beGzmFJtD"; // Yönlendirilecek Discord kanalı URL'sini buraya ekleyin
+                window.location.href = "https://discord.com"; // Yönlendirilecek Discord kanalı URL'sini buraya ekleyin
             } else {
                 setTimeout(startCountdown, 1000); // 1 saniye bekle ve tekrar say
             }
@@ -33,4 +50,6 @@
             startCountdown();
         };
     </script>
+</body>
+</html>
 </html>
