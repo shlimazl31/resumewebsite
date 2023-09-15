@@ -18,13 +18,15 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            
         }
 
         #countdown-text {
             font-size: 24px;
             text-align: center;
-            color: white
+            color: white;
             font-family: "TRT", sans-serif;
+            
         }
     </style>
 </head>
@@ -41,7 +43,7 @@
             countdown--;
 
             if (countdown < 0) {
-                window.location.href = "https://discord.com"; // Yönlendirilecek Discord kanalı URL'sini buraya ekleyin
+                window.location.href = "https://discord.gg/beGzmFJtD"; // Yönlendirilecek Discord kanalı URL'sini buraya ekleyin
             } else {
                 setTimeout(startCountdown, 1000); // 1 saniye bekle ve tekrar say
             }
