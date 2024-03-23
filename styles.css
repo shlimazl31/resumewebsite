@@ -12,6 +12,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.discord-icon {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px; /* Adjust margin as needed */
+}
+
 .content {
   display: flex;
   flex-direction: column;
